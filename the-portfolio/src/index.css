@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Tektur];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+};
+
+.projectstyle{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    
+}
+
+.projectstyle:hover {
+    background-image: linear-gradient( 
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla( 242, 74%, 61%, 0.8)
+    )!important;
+}
+
+
+
+.floating {
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 10s linear infinite;
+    border-radius: 50%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  @-webkit-keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes movebounce {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+
+    
+  }
